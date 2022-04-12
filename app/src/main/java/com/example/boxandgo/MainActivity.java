@@ -3,6 +3,7 @@ package com.example.boxandgo;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -10,5 +11,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ImageView logo = (ImageView) findViewById(R.id.imageView);
+        logo.animate().alpha(1f).setDuration(5000);
     }
 }
