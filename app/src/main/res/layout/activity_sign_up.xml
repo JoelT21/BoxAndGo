@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4F4"
+    tools:context=".SignUp">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:background="#F4F4F4F4"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Sign Up"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSignUpName"
+        android:layout_width="255dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="85dp"
+        android:background="@drawable/border"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:text="Name"
+        android:textAlignment="viewStart"
+        android:textColor="#998E8E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="255dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/border"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:text="Email Address"
+        android:textAlignment="viewStart"
+        android:textColor="#998E8E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSignUpName" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="255dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/border"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:text="Date of Birth"
+        android:textAlignment="viewStart"
+        android:textColor="#998E8E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="255dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/border"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:text="Username"
+        android:textAlignment="viewStart"
+        android:textColor="#998E8E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="255dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/border"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:text="Password"
+        android:textAlignment="viewStart"
+        android:textColor="#998E8E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="173dp"
+        android:layout_marginBottom="40dp"
+        android:text="submit
+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
