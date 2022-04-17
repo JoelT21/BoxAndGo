@@ -4,6 +4,176 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F4F4F4F4"
     tools:context=".Checkout">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@null"
+                    app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="272dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="$ 615.90"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="249dp"
+                android:layout_height="159dp"
+                android:layout_marginStart="68dp"
+                app:srcCompat="@drawable/yeezy_jpg" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:layout_marginTop="4dp"
+                android:text="CHECKOUT"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editextCheckFirst"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="47dp"
+                android:layout_marginEnd="85dp"
+                android:background="@drawable/border"
+                android:hint="Name on Card"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:textAlignment="center"
+                android:textColor="#998E8E" />
+
+            <EditText
+                android:id="@+id/editextCheckSecond"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="47dp"
+                android:layout_marginEnd="85dp"
+                android:background="@drawable/border"
+                android:hint="Card Number"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:textAlignment="center"
+                android:textColor="#998E8E" />
+
+            <EditText
+                android:id="@+id/editextCheckThird"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="47dp"
+                android:layout_marginEnd="85dp"
+                android:background="@drawable/border"
+                android:hint="Expiration Date"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:textAlignment="center"
+                android:textColor="#998E8E" />
+
+            <EditText
+                android:id="@+id/editextCheckFourth"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="47dp"
+                android:layout_marginEnd="85dp"
+                android:background="@drawable/border"
+                android:hint="CVV"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:textAlignment="center"
+                android:textColor="#998E8E" />
+
+            <EditText
+                android:id="@+id/editextCheckFifth"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="47dp"
+                android:layout_marginEnd="85dp"
+                android:background="@drawable/border"
+                android:hint="Address, City, Zip"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:textAlignment="center"
+                android:textColor="#998E8E" />
+
+            <EditText
+                android:id="@+id/editextCheckSixth"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="47dp"
+                android:layout_marginEnd="85dp"
+                android:background="@drawable/border"
+                android:hint="State"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:textAlignment="center"
+                android:textColor="#998E8E" />
+
+            <EditText
+                android:id="@+id/editextCheckSeventh"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="47dp"
+                android:layout_marginEnd="85dp"
+                android:background="@drawable/border"
+                android:hint="Date"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:textAlignment="center"
+                android:textColor="#998E8E" />
+
+            <Button
+                android:id="@+id/buttonCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="144dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="173dp"
+                android:layout_marginBottom="40dp"
+                android:text="submit" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

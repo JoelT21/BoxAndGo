@@ -7,7 +7,7 @@
     android:background="#F4F4F4F4"
     tools:context=".Login">
 
-    <TextView
+    <EditText
         android:id="@+id/textView_Name"
         android:layout_width="255dp"
         android:layout_height="40dp"
@@ -17,14 +17,15 @@
         android:background="@drawable/border"
         android:paddingStart="10dp"
         android:paddingTop="10dp"
-        android:text="Name"
+        android:hint="Username"
+        android:inputType="textPersonName"
         android:textAlignment="viewStart"
         android:textColor="#998E8E"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
-    <TextView
+    <EditText
         android:id="@+id/textView_password"
         android:layout_width="255dp"
         android:layout_height="40dp"
@@ -34,7 +35,8 @@
         android:background="@drawable/border"
         android:paddingStart="10dp"
         android:paddingTop="10dp"
-        android:text="Password"
+        android:hint="Password"
+        android:inputType="textPassword"
         android:textColor="#998E8E"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
