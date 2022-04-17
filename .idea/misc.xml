@@ -7,6 +7,7 @@
         <entry key="app/src/main/res/drawable/rounded_corner.xml" value="0.1905" />
         <entry key="app/src/main/res/layout/activity_access.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_checkout.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_liked.xml" value="0.33958333333333335" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.19322916666666667" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.17552083333333332" />

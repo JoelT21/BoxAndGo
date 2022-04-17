@@ -61,7 +61,7 @@
             <EditText
                 android:id="@+id/editextCheckFirst"
                 android:layout_width="300dp"
-                android:layout_height="40dp"
+                android:layout_height="48dp"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="47dp"
                 android:layout_marginEnd="85dp"
@@ -76,7 +76,7 @@
             <EditText
                 android:id="@+id/editextCheckSecond"
                 android:layout_width="300dp"
-                android:layout_height="40dp"
+                android:layout_height="48dp"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="47dp"
                 android:layout_marginEnd="85dp"
@@ -91,7 +91,7 @@
             <EditText
                 android:id="@+id/editextCheckThird"
                 android:layout_width="300dp"
-                android:layout_height="40dp"
+                android:layout_height="48dp"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="47dp"
                 android:layout_marginEnd="85dp"
@@ -106,7 +106,7 @@
             <EditText
                 android:id="@+id/editextCheckFourth"
                 android:layout_width="300dp"
-                android:layout_height="40dp"
+                android:layout_height="48dp"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="47dp"
                 android:layout_marginEnd="85dp"
@@ -121,7 +121,7 @@
             <EditText
                 android:id="@+id/editextCheckFifth"
                 android:layout_width="300dp"
-                android:layout_height="40dp"
+                android:layout_height="48dp"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="47dp"
                 android:layout_marginEnd="85dp"
@@ -136,7 +136,7 @@
             <EditText
                 android:id="@+id/editextCheckSixth"
                 android:layout_width="300dp"
-                android:layout_height="40dp"
+                android:layout_height="48dp"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="47dp"
                 android:layout_marginEnd="85dp"
@@ -151,7 +151,7 @@
             <EditText
                 android:id="@+id/editextCheckSeventh"
                 android:layout_width="300dp"
-                android:layout_height="40dp"
+                android:layout_height="48dp"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="47dp"
                 android:layout_marginEnd="85dp"
