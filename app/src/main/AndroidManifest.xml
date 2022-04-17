@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BoxAndGo">
         <activity
-            android:name=".Homepage"
+            android:name=".Profile"
+            android:exported="false" />
         <activity
             android:name=".Liked"
             android:exported="false" />
@@ -24,8 +25,8 @@
             android:name=".Login"
             android:exported="false" />
         <activity
-            android:name=".Access" />
-
+            android:name=".Access"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
