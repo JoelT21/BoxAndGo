@@ -10,13 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BoxAndGo">
         <activity
+            android:name=".Homepage"
+            android:exported="false" />
+        <activity
             android:name=".WelcomePage"
-            android:exported="false" />
-        <activity
-            android:name=".Profile"
-            android:exported="false" />
-        <activity
-            android:name=".Liked"
             android:exported="false" />
         <activity
             android:name=".Checkout"

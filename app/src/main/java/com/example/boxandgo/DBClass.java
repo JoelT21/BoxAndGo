@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import androidx.annotation.Nullable;
 
@@ -70,14 +71,27 @@ public class DBClass extends SQLiteOpenHelper {
         return str;
     }
 
+    public String selectAll(String fieldName, String TABLE_NAME){
+        //String c="username=\"shw123\"";
+        String query = "SELECT " + fieldName + " FROM " + TABLE_NAME ;
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor extract = db.rawQuery(query,null);
+        extract.moveToFirst();
 
+        String str = extract.getString(0);
+        return str;
+    }
 
     public byte[] selectPasscode( String fieldName, String TABLE_NAME, String condition ){
         String query = "SELECT " + fieldName + " FROM " + TABLE_NAME + " WHERE " + condition;
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cur = db.rawQuery(query,null);
-        cur.moveToFirst();
-        byte[] val = cur.getBlob(0);
+        byte[] val=null;
+        if(cur!=null){
+            cur.moveToFirst();
+            val = cur.getBlob(0);
+
+        }
         return val;
     }
 
