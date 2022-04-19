@@ -16,12 +16,6 @@
             android:name=".WelcomePage"
             android:exported="false" />
         <activity
-            android:name=".Profile"
-            android:exported="false" />
-        <activity
-            android:name=".Liked"
-            android:exported="false" />
-        <activity
             android:name=".Checkout"
             android:exported="false" />
         <activity
