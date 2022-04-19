@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/F_imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:padding="20dp"
+                android:src="@drawable/ic_baseline_arrow_back_24" />
+
+
+            <ImageView
+                android:id="@+id/F_imageView5"
+                android:layout_width="249dp"
+                android:layout_height="159dp"
+                android:layout_marginStart="68dp"
+                app:srcCompat="@drawable/profile_photo" />
+
+            <TextView
+                android:id="@+id/F_textView8"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:layout_marginTop="4dp"
+                android:text="Eleazer"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/F_textViewProfile1"
+                android:layout_width="300dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="47dp"
+                android:layout_marginEnd="85dp"
+                android:background="@drawable/border"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:text="Name: Eleazer"
+                android:textColor="#998E8E"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/F_textViewProfile2"
+                android:layout_width="300dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="47dp"
+                android:layout_marginEnd="85dp"
+                android:background="@drawable/border"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:text="Age: 23"
+                android:textColor="#998E8E"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/F_textViewProfile3"
+                android:layout_width="300dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="47dp"
+                android:layout_marginEnd="85dp"
+                android:background="@drawable/border"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:text="Sold: 0"
+                android:textColor="#998E8E"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/F_textViewProfile4"
+                android:layout_width="300dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="47dp"
+                android:layout_marginEnd="85dp"
+                android:background="@drawable/border"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:text="Bought: 0"
+                android:textColor="#998E8E"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/F_buttonProfile"
+                android:layout_width="218dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="95dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="173dp"
+                android:layout_marginBottom="40dp"
+                android:text="Delete Account" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

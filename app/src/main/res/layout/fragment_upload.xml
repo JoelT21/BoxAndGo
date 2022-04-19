@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName3"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="47dp"
+            android:layout_marginEnd="85dp"
+            android:background="@drawable/border"
+            android:hint="Type"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:textAlignment="textStart"
+            android:textColor="#998E8E" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName4"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="47dp"
+            android:layout_marginEnd="85dp"
+            android:background="@drawable/border"
+            android:hint="Size"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:textAlignment="textStart"
+            android:textColor="#998E8E" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="47dp"
+                android:layout_marginEnd="85dp"
+                android:background="@drawable/border"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:text="Men"
+                android:textAlignment="textStart"
+                android:textColor="#998E8E" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="47dp"
+                android:layout_marginEnd="85dp"
+                android:background="@drawable/border"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:text="Women"
+                android:textAlignment="textStart"
+                android:textColor="#998E8E" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="173dp"
+                android:layout_marginBottom="40dp"
+                android:paddingLeft="16dp"
+                android:text="DONE" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+</FrameLayout>
