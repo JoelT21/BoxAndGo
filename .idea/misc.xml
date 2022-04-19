@@ -2,7 +2,14 @@
 <project version="4">
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
-      <map>
+
+        <entry key="app/src/main/res/layout/activity_access.xml" value="0.13697916666666668" />
+        <entry key="app/src/main/res/layout/activity_checkout.xml" value="0.13697916666666668" />
+        <entry key="app/src/main/res/layout/activity_homepage.xml" value="0.15555555555555556" />
+        <entry key="app/src/main/res/layout/activity_liked.xml" value="0.13697916666666668" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.13697916666666668" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
+
         <entry key="app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.184" />
         <entry key="app/src/main/res/drawable/rounded_corner.xml" value="0.1905" />
         <entry key="app/src/main/res/layout/activity_access.xml" value="0.22" />
@@ -14,11 +21,13 @@
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.17552083333333332" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.20729166666666668" />
         <entry key="app/src/main/res/layout/activity_welcome_page.xml" value="0.22" />
+
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.31614583333333335" />
         <entry key="app/src/main/res/layout/fragment_liked.xml" value="0.31614583333333335" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.31614583333333335" />
         <entry key="app/src/main/res/layout/fragment_upload.xml" value="0.25" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.31614583333333335" />
+
       </map>
     </option>
   </component>

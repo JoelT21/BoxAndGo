@@ -45,8 +45,13 @@ public class Login extends AppCompatActivity {
 
                     //Get hashed password from database
                     DBClass db = new DBClass(Login.this, "Info");
+                    String getAll=db.selectAll("username","Info");
+                    Log.d("SelectAll","===Retrieve"+getAll);
                     String condition = "username="+'"'+userCode+'"';
+                    Log.d("The condition======", "===="+condition);
                     byte[] dbVersion = db.selectPasscode("password", "Info",condition);
+Log.d("GetfromDB","===getDb=="+dbVersion);
+                    Log.d("GetfromApp","===getpwdApp=="+hashed);
 
                     //compare passwords
                     if(Arrays.equals(hashed,dbVersion)){

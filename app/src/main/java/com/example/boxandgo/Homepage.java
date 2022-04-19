@@ -21,6 +21,7 @@ public class Homepage extends AppCompatActivity {
         setContentView(binding.getRoot());
        replaceFragment(new HomeFragment());
 
+
         binding.bottomNavigationView2.setOnItemSelectedListener(item ->{
 
             switch(item.getItemId()){

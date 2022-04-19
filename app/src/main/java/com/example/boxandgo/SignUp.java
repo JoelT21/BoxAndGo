@@ -23,10 +23,10 @@ public class SignUp extends AppCompatActivity {
         Fields on the user-registration pages
          */
         EditText name = findViewById(R.id.textViewSignUpName);
-        EditText email = findViewById(R.id.textView2);
-        EditText date_of_birth = findViewById(R.id.textView3);
-        EditText username = findViewById(R.id.textView4);
-        EditText passcode = findViewById(R.id.textView5);
+        EditText email = findViewById(R.id.emailtxt);
+        EditText date_of_birth = findViewById(R.id.dobtxt);
+        EditText username = findViewById(R.id.unametxt);
+        EditText passcode = findViewById(R.id.pwdtxt);
 
         Button submit = findViewById(R.id.button2);
 
@@ -57,7 +57,8 @@ public class SignUp extends AppCompatActivity {
 
                         DBClass db = new DBClass(SignUp.this, "Info");
                         //insert data into database
-                        db.addInfo(n,mail,date_o_b,un,hashed);
+                        db.addInfo(n,un,date_o_b,mail,hashed);
+                      //  db.addInfo(n,mail,date_o_b,un,hashed);
 
                         Intent in = new Intent(SignUp.this, Login.class);
                         startActivity(in);
