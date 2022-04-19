@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         //switch to new intent after fade in
         new Timer().schedule(new TimerTask(){
             public void run() {
-                startActivity(new Intent(MainActivity.this, Access.class));
+                startActivity(new Intent(MainActivity.this, Homepage.class));
                 finish();
             }
         }, 6000 );

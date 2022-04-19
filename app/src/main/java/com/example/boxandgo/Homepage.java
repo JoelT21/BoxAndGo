@@ -19,7 +19,8 @@ public class Homepage extends AppCompatActivity {
 
         binding = ActivityHomepageBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        replaceFragment(new HomeFragment());
+       replaceFragment(new HomeFragment());
+
 
         binding.bottomNavigationView2.setOnItemSelectedListener(item ->{
 
@@ -29,7 +30,6 @@ public class Homepage extends AppCompatActivity {
                     replaceFragment(new HomeFragment());
                     break;
                 case R.id.profile:
-                   // replaceFragment(new demofrg());
                     replaceFragment(new ProfileFragment());
                     break;
                 case R.id.upload:
