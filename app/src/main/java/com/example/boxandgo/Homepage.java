@@ -80,7 +80,7 @@ public class Homepage extends AppCompatActivity {
         AlarmManager alarmManager=(AlarmManager)getSystemService(ALARM_SERVICE);
 
         //this method creates a repeating, exactly timed alarm
-        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), 10 *3000, pendingIntent); //1 minute apart
+        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), 1000 * 60 * 2, pendingIntent); //1 minute apart
         Log.d("===Sensing alarm===", "One time alert alarm has been created. This alarm will send to a broadcast sensing receiver.");
 
 
