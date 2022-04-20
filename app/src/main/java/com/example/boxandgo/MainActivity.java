@@ -2,10 +2,15 @@ package com.example.boxandgo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ImageView;
+import android.widget.Toast;
 
+import java.util.Calendar;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -28,4 +33,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }, 6000 );
     }
+
+
 }
