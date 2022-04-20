@@ -113,7 +113,8 @@
                 android:layout_marginTop="50dp"
                 android:layout_marginEnd="173dp"
                 android:layout_marginBottom="40dp"
-                android:text="Delete Account" />
+                android:text="Log out"
+                android:textColor="#283593" />
         </LinearLayout>
     </ScrollView>
 </FrameLayout>

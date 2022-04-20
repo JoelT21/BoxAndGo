@@ -8,6 +8,7 @@
     tools:context=".SignUp">
 
     <ScrollView
+        android:id="@+id/ma"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -20,11 +21,11 @@
                 android:id="@+id/editTextTextPersonName2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="120dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="100dp"
                 android:background="#F4F4F4F4"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:layout_marginStart="50dp"
                 android:minHeight="48dp"
                 android:text="Sign Up"
                 android:textAlignment="center"
@@ -35,11 +36,11 @@
                 android:id="@+id/textViewSignUpName"
                 android:layout_width="255dp"
                 android:layout_height="48dp"
+                android:layout_marginStart="80dp"
                 android:layout_marginTop="50dp"
                 android:background="@drawable/border"
                 android:hint="Name"
                 android:inputType="textPersonName"
-                android:layout_marginStart="50dp"
                 android:paddingStart="10dp"
                 android:paddingTop="10dp"
                 android:textAlignment="viewStart"
@@ -49,11 +50,11 @@
                 android:id="@+id/emailtxt"
                 android:layout_width="255dp"
                 android:layout_height="48dp"
+                android:layout_marginStart="80dp"
                 android:layout_marginTop="50dp"
                 android:background="@drawable/border"
                 android:hint="Email Address"
                 android:inputType="textPersonName"
-                android:layout_marginStart="50dp"
                 android:paddingStart="10dp"
                 android:paddingTop="10dp"
                 android:textAlignment="viewStart"
@@ -63,11 +64,11 @@
                 android:id="@+id/dobtxt"
                 android:layout_width="255dp"
                 android:layout_height="48dp"
+                android:layout_marginStart="80dp"
                 android:layout_marginTop="50dp"
                 android:background="@drawable/border"
                 android:hint="Date of Birth"
                 android:inputType="textPersonName"
-                android:layout_marginStart="50dp"
                 android:paddingStart="10dp"
                 android:paddingTop="10dp"
                 android:textAlignment="viewStart"
@@ -77,11 +78,11 @@
                 android:id="@+id/unametxt"
                 android:layout_width="255dp"
                 android:layout_height="48dp"
+                android:layout_marginStart="80dp"
                 android:layout_marginTop="50dp"
                 android:background="@drawable/border"
                 android:hint="Username"
                 android:inputType="textPersonName"
-                android:layout_marginStart="50dp"
                 android:paddingStart="10dp"
                 android:paddingTop="10dp"
                 android:textAlignment="viewStart"
@@ -91,11 +92,11 @@
                 android:id="@+id/pwdtxt"
                 android:layout_width="255dp"
                 android:layout_height="48dp"
+                android:layout_marginStart="80dp"
                 android:layout_marginTop="50dp"
                 android:background="@drawable/border"
                 android:hint="Password"
                 android:inputType="textPassword"
-                android:layout_marginStart="50dp"
                 android:paddingStart="10dp"
                 android:paddingTop="10dp"
                 android:textAlignment="viewStart"
@@ -103,14 +104,12 @@
 
             <Button
                 android:id="@+id/button2"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="100dp"
-                android:layout_marginTop="50dp"
-                android:layout_marginEnd="173dp"
-                android:layout_marginBottom="40dp"
-                android:text="submit
-        " />
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="30dp"
+                android:text="Submit"
+                android:textColor="#283593" />
 
         </LinearLayout>
     </ScrollView>
