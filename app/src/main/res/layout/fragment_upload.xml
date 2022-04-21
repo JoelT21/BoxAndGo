@@ -17,10 +17,12 @@
 
             <Spinner
                 android:id="@+id/spinner"
-                android:layout_width="match_parent"
+                android:layout_width="300dp"
                 android:layout_height="100dp"
+                android:layout_marginStart="50dp"
                 android:layout_marginTop="50dp"
-                android:contentDescription="Select Shoe" />
+                android:contentDescription="Select Shoe"
+                android:textAlignment="center" />
 
             <EditText
                 android:id="@+id/editTextTextPersonName3"
@@ -30,7 +32,7 @@
                 android:layout_marginTop="47dp"
                 android:layout_marginEnd="85dp"
                 android:background="@drawable/border"
-                android:hint="Type"
+                android:hint="Color Scheme"
                 android:inputType="textPersonName"
                 android:paddingStart="10dp"
                 android:paddingTop="10dp"
