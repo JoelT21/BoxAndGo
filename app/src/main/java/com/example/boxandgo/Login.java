@@ -3,6 +3,7 @@ package com.example.boxandgo;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -57,6 +58,11 @@ Log.d("GetfromDB","===getDb=="+dbVersion);
                     if(Arrays.equals(hashed,dbVersion)){
                         Log.d("Login","===password match========================");
 
+                        SharedPreferences sp = getSharedPreferences("Username", MODE_PRIVATE);
+                        SharedPreferences.Editor edit = sp.edit();
+                        edit.putString("username", userCode);
+                        edit.commit();
+
                         Intent pass = new Intent(Login.this, WelcomePage.class);
                         pass.putExtra(EXTRA_MESSAGE, userCode);
                         startActivity(pass);
@@ -69,6 +75,7 @@ Log.d("GetfromDB","===getDb=="+dbVersion);
                 } catch (NoSuchAlgorithmException e) {
                     e.printStackTrace();
                 }
+
 
 
             }
