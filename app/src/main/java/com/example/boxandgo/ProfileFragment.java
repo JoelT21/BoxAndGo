@@ -1,6 +1,8 @@
 package com.example.boxandgo;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -10,7 +12,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -63,6 +67,28 @@ public class ProfileFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_profile, container, false);
+        TextView display_name = (TextView) v.findViewById(R.id.F_textView8);
+        TextView actual_name= (TextView) v.findViewById(R.id.F_textViewProfile1);
+        TextView actual_username = (TextView) v.findViewById(R.id.F_textViewProfile2);
+        TextView actual_dob = (TextView) v.findViewById(R.id.F_textViewProfile3);
+        TextView actual_email = (TextView) v.findViewById(R.id.F_textViewProfile4);
+
+        SharedPreferences sp = getActivity().getSharedPreferences("Username", Context.MODE_PRIVATE);
+        String username = sp.getString("username", "no username");
+
+        String condition = "username="+'"'+username+'"';
+
+        DBClass db = new DBClass((Homepage)getActivity(),"Info");
+        String name = db.selectVal("name","Info",condition);
+        String uname = db.selectVal("username","Info",condition);
+        String dob = db.selectVal("date_of_birth","Info",condition);
+        String email = db.selectVal("user_email","Info",condition);
+
+        display_name.setText(name);
+        actual_name.setText("Name: " + name);
+        actual_username.setText("User: " + username);
+        actual_dob.setText("Date of Birth: " + dob);
+        actual_email.setText("Email: " + email);
 
         Button btn = (Button) v.findViewById(R.id.F_buttonProfile);
 
