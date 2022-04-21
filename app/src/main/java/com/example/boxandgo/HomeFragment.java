@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -69,6 +70,10 @@ public class HomeFragment extends Fragment {
         Button btn2 = (Button) v.findViewById(R.id.button4);
         Button btn3 = (Button) v.findViewById(R.id.button5);
 
+        ImageView star_one = (ImageView)v.findViewById(R.id.imageViewStar);
+        ImageView star_two = (ImageView)v.findViewById(R.id.imageViewStarTwo);
+        ImageView star_three = (ImageView)v.findViewById(R.id.imageViewStarThree);
+
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -93,6 +98,47 @@ public class HomeFragment extends Fragment {
                 Log.d("Button clicked", "=============");
                 Intent intent = new Intent((Homepage)getActivity(), Checkout.class);
                 startActivity(intent);
+            }
+        });
+
+        star_one.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if(star_one.getDrawable().getConstantState() == getResources().getDrawable(R.drawable.ic_baseline_star_border_24).getConstantState()){
+                    star_one.setImageResource(R.drawable.ic_baseline_star_24);
+                }
+                else{
+                    star_one.setImageResource(R.drawable.ic_baseline_star_border_24);
+                }
+
+            }
+        });
+
+        star_two.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(star_two.getDrawable().getConstantState() == getResources().getDrawable(R.drawable.ic_baseline_star_border_24).getConstantState()){
+                    star_two.setImageResource(R.drawable.ic_baseline_star_24);
+                }
+                else{
+                    star_two.setImageResource(R.drawable.ic_baseline_star_border_24);
+                }
+
+
+            }
+        });
+        star_three.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(star_three.getDrawable().getConstantState() == getResources().getDrawable(R.drawable.ic_baseline_star_border_24).getConstantState()){
+                    star_three.setImageResource(R.drawable.ic_baseline_star_24);
+                }
+                else{
+                    star_three.setImageResource(R.drawable.ic_baseline_star_border_24);
+                }
+
+
             }
         });
 
