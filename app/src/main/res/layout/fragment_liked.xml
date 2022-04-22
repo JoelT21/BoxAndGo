@@ -54,7 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="230dp"
                 android:layout_weight="1"
-                android:src="@drawable/jordan_jpg" />
+                android:src="@drawable/default_shoe" />
 
             <View
                 android:id="@+id/divider4"
@@ -69,7 +69,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="230dp"
                 android:layout_weight="1"
-                android:src="@drawable/jordan_3_jpy" />
+                android:src="@drawable/default_shoe" />
 
             <View
                 android:id="@+id/divider5"
@@ -78,6 +78,13 @@
                 android:layout_marginTop="10dp"
                 android:layout_weight="2"
                 android:background="?android:attr/listDivider" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_weight="1"
+                android:src="@drawable/default_shoe" />
 
         </LinearLayout>
     </ScrollView>
