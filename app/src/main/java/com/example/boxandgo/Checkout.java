@@ -6,7 +6,9 @@ import androidx.core.content.ContextCompat;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Environment;
@@ -32,6 +34,26 @@ public class Checkout extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_checkout);
         requestAppPermissions();
+
+        ImageView shoe = findViewById(R.id.imageView3);
+
+        SharedPreferences sp = getSharedPreferences("BuyShoe", Context.MODE_PRIVATE);
+        SharedPreferences.Editor edit = sp.edit();
+        boolean buy1 = sp.getBoolean("buy1", false);
+        boolean buy2 = sp.getBoolean("buy2", false);
+        boolean buy3 = sp.getBoolean("buy3", false);
+        if(buy1){
+            shoe.setImageResource(R.drawable.yeezy_jpg);
+            edit.clear();
+        }
+        else if(buy2){
+            shoe.setImageResource(R.drawable.jordan_3_jpy);
+            edit.clear();
+        }
+        else if(buy3){
+            shoe.setImageResource(R.drawable.jordan_jpg);
+            edit.clear();
+        }
 
         //Back button
         ImageView img = findViewById(R.id.imageView2);
