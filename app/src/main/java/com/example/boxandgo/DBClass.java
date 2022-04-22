@@ -95,6 +95,8 @@ public class DBClass extends SQLiteOpenHelper {
         return val;
     }
 
-
-
+    public void deleteTable(String table_name){
+        SQLiteDatabase sq = this.getWritableDatabase();
+        sq.execSQL("DELETE * FROM" + table_name);
+    }
 }

@@ -55,16 +55,6 @@ public class Checkout extends AppCompatActivity {
             edit.clear();
         }
 
-        //Back button
-        ImageView img = findViewById(R.id.imageView2);
-
-        img.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Checkout.this, Homepage.class);
-                startActivity(intent);
-            }
-        });
         /*
         Text fields
          */

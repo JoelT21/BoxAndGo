@@ -83,8 +83,6 @@ public class UploadFragment extends Fragment {
                 Toast.makeText((Homepage)getActivity(), "Your shoe has been uploaded successfully!", Toast.LENGTH_LONG).show();
             }
         });
-
-
         // Inflate the layout for this fragment
         //return inflater.inflate(R.layout.fragment_upload, container, false);
         return v;
